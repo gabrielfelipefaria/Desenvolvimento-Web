@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio Geek Interativo</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<header>
+  <h1>⚡ Portfólio Geek Interativo</h1>
+  <nav>
+    <a href="#perfil">Perfil</a>
+    <a href="#card">Card</a>
+    <a href="#episodios">Episódios</a>
+    <a href="#xp">XP</a>
+    <a href="#quiz">Quiz</a>
+    <a href="#galeria">Galeria</a>
+  </nav>
+</header>
+
+<!-- 1 PERFIL -->
+<section id="perfil" class="card">
+  <h2>Perfil de Personagem</h2>
+  <img src=".//homemdeferro.png" alt="Homem de Ferro">
+  <div class="arc"></div>
+  <h3>Homem de Ferro</h3>
+  <p>Gênio bilionário que cria armaduras tecnológicas.</p>
+  <ul>
+    <li>Inteligência</li>
+    <li>Tecnologia</li>
+    <li>Voo</li>
+  </ul>
+</section>
+
+<!-- 2 CARD -->
+<section id="card" class="card">
+  <h2>Card de Jogo</h2>
+  <h3>HERÓI</h3>
+
+  <p>Vida</p>
+  <div class="bar"><div class="fill vida"></div></div>
+
+  <p>Poder</p>
+  <div class="bar"><div class="fill poder"></div></div>
+
+  <p>Velocidade</p>
+  <div class="bar"><div class="fill vel"></div></div>
+</section>
+
+<!-- 3 EPISÓDIOS -->
+<section id="episodios" class="card">
+  <h2>Episódios Favoritos</h2>
+  <ul>
+    <li>Ep 1 - Início</li>
+    <li class="fav">Ep 5 - Batalha Épica ⭐</li>
+    <li>Ep 9 - Revelação</li>
+  </ul>
+</section>
+
+<!-- 4 XP -->
+<section id="xp" class="card">
+  <h2>Sistema de XP</h2>
+  <p id="xpValue">XP: 0</p>
+  <button onclick="addXP()">+10 XP</button>
+  <button onclick="removeXP()">-5 XP</button>
+</section>
+
+<!-- 5 QUIZ -->
+<section id="quiz" class="card">
+  <h2>Quiz Geek</h2>
+  <p>Quem é o Batman?</p>
+  <button onclick="quiz(true)">Bruce Wayne</button>
+  <button onclick="quiz(false)">Clark Kent</button>
+
+  <p>Goku é de qual anime?</p>
+  <button onclick="quiz(true)">Dragon Ball</button>
+  <button onclick="quiz(false)">Naruto</button>
+
+  <p id="quizResult"></p>
+</section>
+
+<!-- 6 GALERIA -->
+<section id="galeria" class="card">
+  <h2>Galeria</h2>
+  <div class="grid">
+    <div class="item" onclick="show('Batman - Cavaleiro das Trevas')">Batman</div>
+    <div class="item" onclick="show('Goku - Saiyajin')">Goku</div>
+    <div class="item" onclick="show('Luffy - Pirata')">Luffy</div>
+  </div>
+  <p id="details"></p>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
